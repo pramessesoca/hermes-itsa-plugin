@@ -1,0 +1,14 @@
+name: itsa-plugin-hermes
+version: 0.1.0
+description: Hermes plugin for ITSA results with a data-provider abstraction.
+entrypoint: itsa_plugin
+configuration:
+  ITSA_EXCEL_PATH:
+    required: true
+    description: Path to the ITSA Excel file.
+tools:
+  - search_itsa
+  - get_statistics
+  - get_summary
+  - filter_data
+  - reload_excel
